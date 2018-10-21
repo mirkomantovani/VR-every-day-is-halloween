@@ -1,39 +1,87 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class TriggerFloor2 : MonoBehaviour {
 
-    public Animator floor2;
+    public GameObject middleR2;
+    public GameObject floor2;
     public Animator heavenStairs;
+    public Animator rotateRoom2;
+    public AudioSource scaryLaugh;
+    public GameObject R2objects;
+    public GameObject R3;
+    public GameObject R1R2;
 
+    public static bool entered;
 
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Object entered in cereal1 trigger: " + other.name);
+        Debug.Log("Objec trigger floor room2: " + other.name);
 
-        switch (other.name)
+        if (entered == false && other.name.StartsWith("[VRTK][AUTOGEN]"))
         {
-            case "[VRTK][AUTOGEN][FootColliderContainer]":
-                Debug.Log("Playing animation Room2FloorAppear");
-                floor2.Play("Room2FloorAppear");
-                heavenStairs.Play("HeavenStairsFade");
-                //heavenStairs.Play("none");
-                break;
-            default:
-                Debug.Log("Unidentified object entered");
-                break;
+	       middleR2.SetActive(true);
+            createShortMessage(MenuText.SPIDER_BURROW, 5);
+            //Debug.Log("Playing animation Room2FloorAppear");
+            floor2.SetActive(true);
+            heavenStairs.Play("HeavenStairsFade");
+            rotateRoom2.Play("RotateRoom2");
+            scaryLaugh.Play();
+            Invoke("createObjects", 9);
+            Invoke("updateScene", 15);            //R2objects.SetActive(true);
+            entered = true;
+            //heavenStairs.Play("none");
         }
+        //switch (other.name)
+        //{
+
+
+        //    case "[VRTK][AUTOGEN][FootColliderContainer]":
+        //        if (entered == false)
+        //        {
+        //            Debug.Log("Playing animation Room2FloorAppear");
+        //            floor2.SetActive(true);
+        //            heavenStairs.Play("HeavenStairsFade");
+        //            rotateRoom2.Play("RotateRoom2");
+        //            scaryLaugh.Play();
+        //            Invoke("createObjects", 2);
+        //            //R2objects.SetActive(true);
+        //            entered = true;
+        //            //heavenStairs.Play("none");
+        //        }
+        //        break;
+        //    default:
+        //        Debug.Log("Unidentified object entered");
+        //        break;
+        //}
+    }
+
+    private void createObjects(){
+         R2objects.SetActive(true);
+middleR2.SetActive(false);
+    }
+
+    private void createShortMessage(string message, int seconds)
+    {
+        MenuText.createShortMessage(message);
+        Invoke("clearIn", seconds);
+    }
+
+    private void updateScene(){
+        R1R2.SetActive(false);
+        createShortMessage(MenuText.CLIMB_HINT, 4);
+        Invoke("readyToClimb", 2);
+    }
+
+    private void readyToClimb(){
+        R3.SetActive(true);
+        floor2.SetActive(false);
     }
 
 
-    // Use this for initialization
-    void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    private void clearIn()
+    {
+        MenuText.clearMessage();
+    }
 }
