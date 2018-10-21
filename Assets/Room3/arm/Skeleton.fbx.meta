@@ -1,0 +1,179 @@
+fileFormatVersion: 2
+guid: dd2b5d830cbd04a44a88cd0bb2f4d9ea
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: FingerSeg12
+    100002: FingerSeg2
+    100004: FingerSeg2 1
+    100006: FingerSeg2 2
+    100008: FingerSeg2 3
+    100010: FingerSeg3
+    100012: FingerSeg3 1
+    100014: FingerSeg3 2
+    100016: FingerSeg3 3
+    100018: FingerSeg3 4
+    100020: Forearm
+    100022: Middle
+    100024: Palm
+    100026: Pinky
+    100028: Pointer
+    100030: Ring
+    100032: //RootNode
+    100034: Thumb
+    400000: FingerSeg12
+    400002: FingerSeg2
+    400004: FingerSeg2 1
+    400006: FingerSeg2 2
+    400008: FingerSeg2 3
+    400010: FingerSeg3
+    400012: FingerSeg3 1
+    400014: FingerSeg3 2
+    400016: FingerSeg3 3
+    400018: FingerSeg3 4
+    400020: Forearm
+    400022: Middle
+    400024: Palm
+    400026: Pinky
+    400028: Pointer
+    400030: Ring
+    400032: //RootNode
+    400034: Thumb
+    2100000: phong1
+    2300000: FingerSeg12
+    2300002: FingerSeg2
+    2300004: FingerSeg2 1
+    2300006: FingerSeg2 2
+    2300008: FingerSeg2 3
+    2300010: FingerSeg3
+    2300012: FingerSeg3 1
+    2300014: FingerSeg3 2
+    2300016: FingerSeg3 3
+    2300018: FingerSeg3 4
+    2300020: Forearm
+    2300022: Middle
+    2300024: Palm
+    2300026: Pinky
+    2300028: Pointer
+    2300030: Ring
+    2300032: //RootNode
+    2300034: Thumb
+    3300000: FingerSeg12
+    3300002: FingerSeg2
+    3300004: FingerSeg2 1
+    3300006: FingerSeg2 2
+    3300008: FingerSeg2 3
+    3300010: FingerSeg3
+    3300012: FingerSeg3 1
+    3300014: FingerSeg3 2
+    3300016: FingerSeg3 3
+    3300018: FingerSeg3 4
+    3300020: Forearm
+    3300022: Middle
+    3300024: Palm
+    3300026: Pinky
+    3300028: Pointer
+    3300030: Ring
+    3300032: //RootNode
+    3300034: Thumb
+    4300000: arm
+    4300002: Forearm
+    4300004: Palm
+    4300006: Pinky
+    4300008: FingerSeg2
+    4300010: FingerSeg3
+    4300012: Ring
+    4300014: FingerSeg2
+    4300016: FingerSeg3
+    4300018: Middle
+    4300020: FingerSeg2
+    4300022: FingerSeg3
+    4300024: Thumb
+    4300026: FingerSeg12
+    4300028: FingerSeg3
+    4300030: Pointer
+    4300032: FingerSeg2
+    4300034: FingerSeg3
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
